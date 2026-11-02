@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MOOGOLLA RAMU — Python Developer &amp; AI/ML Engineer</title>
+    <meta name="description" content="Portfolio of Moogolla Ramu, Python Developer specializing in Artificial Intelligence, Machine Learning, Deep Learning, and Database Systems. Featuring AI-Driven Crop Disease Detection (CNN, TensorFlow, Streamlit) and Smart Dustbin IoT Automation." />
+    <meta name="keywords" content="Moogolla Ramu, Python Developer, AI Engineer, Machine Learning, Deep Learning, CNN, Convolutional Neural Network, TensorFlow, Streamlit, MySQL, SQL, Smart Farming, Anantapur, Andhra Pradesh" />
+    <meta name="author" content="Moogolla Ramu" />
+    <meta name="theme-color" content="#F5F3EA" />
+
+    <!-- OpenGraph Core Metadata -->
+    <meta property="og:site_name" content="Moogolla Ramu Portfolio" />
+    <meta property="og:title" content="MOOGOLLA RAMU — Python Developer &amp; AI/ML Engineer" />
+    <meta property="og:description" content="Portfolio of Moogolla Ramu, Python Developer &amp; AI/ML Engineer. Explore flagship projects: AI-Driven Crop Disease Detection with CNNs &amp; Streamlit, and Smart Dustbin IoT Automation." />
+    <meta property="og:type" content="profile" />
+    <meta property="profile:first_name" content="Moogolla" />
+    <meta property="profile:last_name" content="Ramu" />
+    <meta property="profile:username" content="moogollaramu" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Granular Project Metadata: Project 1 (AI Crop Disease Detection) -->
+    <meta name="project:crop_disease_ai:title" content="AI-Driven Crop Disease Detection and Smart Farming Solutions System" />
+    <meta name="project:crop_disease_ai:technologies" content="Python, Streamlit, TensorFlow, CNN" />
+    <meta name="project:crop_disease_ai:category" content="AI for Agriculture · 2026" />
+    <meta name="project:crop_disease_ai:description" content="Developed an AI-powered application that analyzes crop leaf images using a Convolutional Neural Network (CNN) to identify potential crop diseases with 98%+ confidence, integrating treatment recommendations, a crop encyclopedia, government scheme information, and farmer support modules." />
+    <meta property="og:description:project:crop_disease_ai" content="AI-Driven Crop Disease Detection: Real-time leaf pathology diagnosis with CNN models, treatment recommendations, and farming advisory." />
+
+    <!-- Granular Project Metadata: Project 2 (Smart Dustbin IoT) -->
+    <meta name="project:smart_dustbin:title" content="Smart Dustbin with Automatic Lid Opening" />
+    <meta name="project:smart_dustbin:technologies" content="Infrared/Ultrasonic Sensors, Servo Motor, Microcontroller, Python / Embedded C" />
+    <meta name="project:smart_dustbin:category" content="IoT &amp; Robotics · 2025" />
+    <meta name="project:smart_dustbin:description" content="Designed a touchless waste-disposal system using infrared and ultrasonic proximity sensors to detect nearby objects and activate a servo motor for automatic contactless lid operation, promoting hygienic waste disposal." />
+    <meta property="og:description:project:smart_dustbin" content="Smart Dustbin with Automatic Lid Opening: Touchless waste management device featuring proximity sensing and automated servo motor sweep." />
+
+    <!-- Twitter Card Granular Metadata -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="MOOGOLLA RAMU — Python Developer &amp; AI/ML Engineer" />
+    <meta name="twitter:description" content="Python Developer &amp; AI/ML Engineer. Explore projects: AI-Driven Crop Disease Detection (CNN, Streamlit) and Smart Dustbin IoT Automation." />
+    <meta name="twitter:label1" content="Primary Technologies" />
+    <meta name="twitter:data1" content="Python, TensorFlow, CNN, Streamlit, MySQL" />
+    <meta name="twitter:label2" content="Internship" />
+    <meta name="twitter:data2" content="NIELIT (AI &amp; ML, 6 Months)" />
+
+    <!-- Structured Data (JSON-LD) for Search Engines & Social Platforms -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "#person",
+            "name": "Moogolla Ramu",
+            "jobTitle": "Python Developer",
+            "telephone": "+91 95505 82361",
+            "email": "moogollaramu@gmail.com",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Anantapur",
+              "addressRegion": "Andhra Pradesh",
+              "addressCountry": "India"
+            },
+            "alumniOf": {
+              "@type": "CollegeOrUniversity",
+              "name": "Dr. K. V. Subbareddy Institute of Technology",
+              "department": "Computer Science and Engineering"
+            },
+            "knowsAbout": [
+              "Python",
+              "Artificial Intelligence",
+              "Machine Learning",
+              "Deep Learning",
+              "Convolutional Neural Networks",
+              "TensorFlow",
+              "Streamlit",
+              "MySQL",
+              "Digital Image Processing"
+            ]
+          },
+          {
+            "@type": "SoftwareApplication",
+            "name": "AI-Driven Crop Disease Detection and Smart Farming Solutions System",
+            "applicationCategory": "AgriculturalApplication",
+            "operatingSystem": "Web",
+            "author": { "@id": "#person" },
+            "description": "Developed an AI-powered application that analyzes crop leaf images using a Convolutional Neural Network to identify potential crop diseases, integrated with treatment recommendations and farmer support."
+          },
+          {
+            "@type": "CreativeWork",
+            "name": "Smart Dustbin with Automatic Lid Opening",
+            "author": { "@id": "#person" },
+            "description": "Touchless waste-disposal system using infrared and ultrasonic proximity sensors coupled with precision servo motor actuation for hygienic lid control."
+          }
+        ]
+      }
+    </script>
+    <script>
+      // Compatibility guard for browser extensions that attempt to reassign window.fetch
+      (function() {
+        try {
+          var _fetch = window.fetch;
+          Object.defineProperty(window, 'fetch', {
+            get: function() { return _fetch; },
+            set: function(val) { _fetch = val; },
+            configurable: true,
+            enumerable: true
+          });
+        } catch (e) {}
+
+        // Shield app from third-party browser extension exceptions
+        window.addEventListener('error', function(event) {
+          if (event.filename && event.filename.indexOf('chrome-extension://') !== -1) {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+            return true;
+          }
+        }, true);
+
+        window.addEventListener('unhandledrejection', function(event) {
+          var stack = (event.reason && (event.reason.stack || event.reason.message)) || '';
+          if (stack.indexOf('chrome-extension://') !== -1) {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+          }
+        }, true);
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@700;800;900&display=swap" rel="stylesheet" />
+  </head>
+  <body class="bg-[#F5F3EA] text-[#252525] antialiased selection:bg-[#E0FD72] selection:text-[#252525]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
