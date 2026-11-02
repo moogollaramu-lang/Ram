@@ -47,15 +47,14 @@ export const About: React.FC = () => {
                   </span>
                 </div>
 
-                {/* Center Visual: Tech Avatar / Silhouette */}
+                {/* Center Visual: Profile Photo */}
                 <div className="relative z-10 flex flex-col items-center justify-center my-6 text-center">
-                  <div className="w-28 h-28 sm:w-36 sm:h-36 rounded-full bg-[#252525] text-[#E0FD72] flex flex-col items-center justify-center border-4 border-white shadow-lg relative group">
-                    <span className="font-heading font-black text-3xl sm:text-4xl tracking-tighter">
-                      MR
-                    </span>
-                    <span className="text-[10px] font-mono uppercase tracking-widest text-neutral-300">
-                      Python Dev
-                    </span>
+                  <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full overflow-hidden border-4 border-white shadow-xl relative group ring-4 ring-[#E0FD72]/50 bg-[#252525]">
+                    <img
+                      src="/profile.jpg"
+                      alt={PERSONAL_INFO.name}
+                      className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                    />
                   </div>
                   <h3 className="font-heading font-extrabold text-xl sm:text-2xl text-[#252525] mt-4">
                     {PERSONAL_INFO.name}

@@ -20,8 +20,11 @@ export const Hero: React.FC = () => {
       />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-        {/* Status Pill Badge */}
-        <div className="mb-6 sm:mb-8">
+        {/* Status Pill Badge with Profile Thumbnail */}
+        <div className="mb-6 sm:mb-8 flex items-center gap-3">
+          <div className="w-11 h-11 rounded-full overflow-hidden border-2 border-[#252525] shadow-xs shrink-0 ring-2 ring-[#E0FD72]">
+            <img src="/profile.jpg" alt="Moogolla Ramu" className="w-full h-full object-cover object-top" />
+          </div>
           <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white border border-[#252525] text-[#252525] font-mono text-xs sm:text-sm font-medium shadow-xs">
             <span className="relative flex h-2.5 w-2.5">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>

@@ -24,8 +24,8 @@ export const Navbar: React.FC = () => {
           className="flex items-center gap-2 group cursor-pointer focus:outline-none"
           aria-label="Moogolla Ramu - Home"
         >
-          <div className="w-8 h-8 rounded-lg bg-[#252525] flex items-center justify-center text-[#E0FD72] font-mono text-sm font-bold shadow-sm group-hover:scale-105 transition-transform">
-            &gt;_
+          <div className="w-8 h-8 rounded-full overflow-hidden border border-[#252525] shrink-0 shadow-xs">
+            <img src="/profile.jpg" alt="Moogolla Ramu" className="w-full h-full object-cover object-top" />
           </div>
           <span className="font-mono text-lg font-bold tracking-tight text-[#252525] group-hover:text-black transition-colors">
             {PERSONAL_INFO.shortName}
