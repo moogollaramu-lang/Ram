@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { PERSONAL_INFO } from '../data/portfolioData';
-import { Check, Sparkles, Code2, Database, BrainCircuit, User } from 'lucide-react';
+import { Sparkles } from 'lucide-react';
 
 export const About: React.FC = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -18,9 +18,6 @@ export const About: React.FC = () => {
   const textOpacity = useTransform(scrollYProgress, [0.1, 0.55], [0, 1]);
   const textY = useTransform(scrollYProgress, [0.1, 0.55], [45, 0]);
 
-  // Floating parallax drift on badge chips
-  const badgeParallax = useTransform(scrollYProgress, [0, 1], [-10, 10]);
-
   return (
     <section ref={sectionRef} id="about" className="py-20 lg:py-28 bg-[#F5F3EA] overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -31,7 +28,7 @@ export const About: React.FC = () => {
             className="lg:col-span-5 flex justify-center"
           >
             <div className="relative w-full max-w-sm">
-              {/* Main Card Frame: Full-bleed profile picture occupying the entire box */}
+              {/* Main Card Frame: Clean full-bleed profile picture occupying the entire box */}
               <div className="relative aspect-4/5 w-full rounded-3xl border-2 border-[#252525] shadow-[8px_8px_0px_0px_#252525] overflow-hidden bg-[#252525] group">
                 <img
                   src="/profile.jpg"
@@ -39,29 +36,6 @@ export const About: React.FC = () => {
                   className="w-full h-full object-cover object-[center_20%] group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
-
-              {/* Floating Tech Chips */}
-              <motion.div
-                style={{ y: badgeParallax }}
-                className="absolute -top-3 -right-3 z-20 bg-white px-3 py-1.5 rounded-full border border-[#252525] text-xs font-mono font-semibold shadow-md flex items-center gap-1.5"
-              >
-                <span className="w-2 h-2 rounded-full bg-[#E0FD72]" />
-                <span>Python</span>
-              </motion.div>
-              <motion.div
-                style={{ y: badgeParallax }}
-                className="absolute top-1/2 -left-4 z-20 bg-[#252525] text-white px-3 py-1.5 rounded-full border border-black text-xs font-mono font-medium shadow-md flex items-center gap-1.5"
-              >
-                <BrainCircuit className="w-3.5 h-3.5 text-[#E0FD72]" />
-                <span>CNN / TensorFlow</span>
-              </motion.div>
-              <motion.div
-                style={{ y: badgeParallax }}
-                className="absolute -bottom-3 right-6 z-20 bg-[#E0FD72] text-[#252525] px-3.5 py-1.5 rounded-full border border-[#252525] text-xs font-mono font-bold shadow-md flex items-center gap-1.5"
-              >
-                <Database className="w-3.5 h-3.5" />
-                <span>MySQL</span>
-              </motion.div>
             </div>
           </motion.div>
 
